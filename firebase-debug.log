@@ -1,0 +1,106 @@
+[debug] [2021-02-17T09:20:05.622Z] ----------------------------------------------------------------------
+[debug] [2021-02-17T09:20:05.624Z] Command:       /home/franatic/.nvm/versions/node/v12.18.3/bin/node /home/franatic/.nvm/versions/node/v12.18.3/bin/firebase init
+[debug] [2021-02-17T09:20:05.625Z] CLI Version:   9.4.0
+[debug] [2021-02-17T09:20:05.625Z] Platform:      linux
+[debug] [2021-02-17T09:20:05.625Z] Node Version:  v12.18.3
+[debug] [2021-02-17T09:20:05.625Z] Time:          Wed Feb 17 2021 10:20:05 GMT+0100 (Central European Standard Time)
+[debug] [2021-02-17T09:20:05.625Z] ----------------------------------------------------------------------
+[debug] [2021-02-17T09:20:05.626Z] 
+[debug] [2021-02-17T09:20:05.629Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-02-17T09:20:05.630Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /home/franatic/Workspace/priority-app
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2021-02-17T09:20:44.506Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2021-02-17T09:20:44.846Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 200
+[debug] [2021-02-17T09:20:44.846Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[info] i  Using project priority-app-47be1 (priority-app) 
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-02-17T09:20:46.602Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-17T09:20:46.602Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-17T09:20:46.755Z] <<< HTTP RESPONSE 200 {"date":"Wed, 17 Feb 2021 09:20:46 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T09:20:46.764Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/priority-app-47be1/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-02-17T09:20:47.762Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Feb 2021 09:20:47 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] ⚠  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-02-17T09:20:47.763Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/priority-app-47be1/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-02-17T09:20:49.284Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Feb 2021 09:20:49 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T09:20:59.294Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/priority-app-47be1/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-02-17T09:21:00.322Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Feb 2021 09:21:00 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-02-17T09:21:00.330Z] > refreshing access token with scopes: []
+[debug] [2021-02-17T09:21:00.330Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-17T09:21:00.508Z] <<< HTTP RESPONSE 200 {"date":"Wed, 17 Feb 2021 09:21:00 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T09:21:00.521Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/priority-app-47be1 [none]
+[debug] [2021-02-17T09:21:00.761Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/priority-app-47be1 200
+[debug] [2021-02-17T09:21:00.762Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/priority-app-47be1 {"projectId":"priority-app-47be1","projectNumber":"980985719284","displayName":"priority-app","name":"projects/priority-app-47be1","resources":{"hostingSite":"priority-app-47be1"},"state":"ACTIVE"}
+[debug] [2021-02-17T09:23:13.297Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-02-17T09:23:13.297Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-02-17T09:23:13.455Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Wed, 17 Feb 2021 09:23:13 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T09:23:13.465Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/priority-app-47be1/locations/europe-west1/instances?databaseId=priority-app-47be1-default-rtdb&validateOnly=true  
+ {"type":"default_database"}
+[debug] [2021-02-17T09:23:14.131Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Feb 2021 09:23:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-02-17T09:23:14.133Z] >>> HTTP REQUEST POST https://firebasedatabase.googleapis.com/v1beta/projects/priority-app-47be1/locations/europe-west1/instances?databaseId=priority-app-47be1-default-rtdb  
+ {"type":"default_database"}
+[debug] [2021-02-17T09:23:15.687Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Wed, 17 Feb 2021 09:23:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] Firebase Realtime Database Security Rules allow you to define how your data should be
+[info] structured and when your data can be read from and written to.
+[info] 
+[debug] [2021-02-17T09:23:20.991Z] >>> HTTP REQUEST GET https://priority-app-47be1-default-rtdb.europe-west1.firebasedatabase.app/.settings/rules.json  
+ 
+[debug] [2021-02-17T09:23:21.525Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Wed, 17 Feb 2021 09:23:21 GMT","content-type":"application/json; charset=utf-8","content-length":"161","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] ✔  Database Rules for priority-app-47be1-default-rtdb have been written to database.rules.json. 
+[info] Future modifications to database.rules.json will update Realtime Database Security Rules when you run
+[info] firebase deploy.
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-02-17T09:23:36.792Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2021-02-17T09:23:36.915Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2021-02-17T09:23:36.915Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"8.2.7","browserURL":"https://www.gstatic.com/firebasejs/8.2.7/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/8.2.7/firebase.tgz"},"live":{"version":"8.2","browserURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/8.2/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/8.2.7/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js","auth":"https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js","database":"https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js","firestore":"https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.js","functions":"https://www.gstatic.com/firebasejs/8.2.7/firebase-functions.js","installations":"https://www.gstatic.com/firebasejs/8.2.7/firebase-installations.js","messaging":"https://www.gstatic.com/firebasejs/8.2.7/firebase-messaging.js","storage":"https://www.gstatic.com/firebasejs/8.2.7/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/8.2.7/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/8.2.7/firebase-remote-config.js","firestore.memory":"https://www.gstatic.com/firebasejs/8.2.7/firebase-firestore.memory.js"}}
+[info] ✔  Wrote public/index.html 
+[info] 
+[info] i  Detected a .git folder at /home/franatic/Workspace/priority-app 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=217601994&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...
+[debug] [2021-02-17T09:24:39.747Z] >>> HTTP REQUEST POST https://github.com/login/oauth/access_token  
+ {"client_id":"89cf50f02ac6aaed3484","client_secret":"3330d14abc895d9a74d5f17cd7a00711fa2c5bf0","code":"5655816f97fe46c7b198","redirect_uri":"http://localhost:9005","state":"217601994"}
+[debug] [2021-02-17T09:24:40.131Z] <<< HTTP RESPONSE 200 {"server":"GitHub.com","date":"Wed, 17 Feb 2021 09:24:40 GMT","content-type":"application/json; charset=utf-8","link":"<https://github.githubassets.com/assets/chunk-frameworks-f8de2b51.js>; integrity=sha512-+N4rURJaQAH7alilIZ47KaP8sCRHB717YeeQnMh1WCZoxu1zUOlMcjRRobRIcBR1dcquwXOt/fkXNAud7u2eqw==; rel=preload; crossorigin=anonymous; as=script,<https://github.githubassets.com/assets/chunk-vendor-111977e2.js>; integrity=sha512-ERl34tt3h9VgtVbHW6LdpHB2PTIAV820kUUD+2FB00I6zfAtUzSldGxDKDUNgnCZdmfYcJkYlUCYMmVAUYJomA==; rel=preload; crossorigin=anonymous; as=script,<https://github.githubassets.com/assets/behaviors-bf28db4d.js>; integrity=sha512-vyjbTdEGTiemoiT41KyVSh3+NxJv285wa1qlccyGrTsQsAAvhBSUrT0t1LZbJVEfccSTx+zLAyTekiljOX2wKA==; rel=preload; crossorigin=anonymous; as=script,<https://github.githubassets.com/assets/environment-f0adafbf.js>; integrity=sha512-8K2vvwbW+6H27Nad5ydg8PA2/aMD/LKq+EiK9s0U0hhVZxCI2tWBsYk9beAtisRw2j+Or5k2/F+6dk02nmj/PA==; rel=preload; crossorigin=anonymous; as=script","vary":"X-PJAX, Accept-Encoding, Accept, X-Requested-With","etag":"W/\"02f1b6f414df8fcd9465aa2508af802c\"","cache-control":"max-age=0, private, must-revalidate","strict-transport-security":"max-age=31536000; includeSubdomains; preload","x-frame-options":"deny","x-content-type-options":"nosniff","x-xss-protection":"1; mode=block","referrer-policy":"origin-when-cross-origin, strict-origin-when-cross-origin","expect-ct":"max-age=2592000, report-uri=\"https://api.github.com/_private/browser/errors\"","content-security-policy":"default-src 'none'; base-uri 'self'; block-all-mixed-content; connect-src 'self' uploads.github.com www.githubstatus.com collector.githubapp.com api.github.com github-cloud.s3.amazonaws.com github-production-repository-file-5c1aeb.s3.amazonaws.com github-production-upload-manifest-file-7fdce7.s3.amazonaws.com github-production-user-asset-6210df.s3.amazonaws.com cdn.optimizely.com logx.optimizely.com/v1/events wss://alive.github.com; font-src github.githubassets.com; form-action 'self' github.com gist.github.com; frame-ancestors 'none'; frame-src render.githubusercontent.com; img-src 'self' data: github.githubassets.com identicons.github.com collector.githubapp.com github-cloud.s3.amazonaws.com user-images.githubusercontent.com/ *.githubusercontent.com; manifest-src 'self'; media-src 'none'; script-src github.githubassets.com; style-src 'unsafe-inline' github.githubassets.com; worker-src github.com/socket-worker-5029ae85.js gist.github.com/socket-worker-5029ae85.js","x-github-request-id":"C9FE:12B79:96598D:B016E5:602CE0D7","transfer-encoding":"chunked"}
+[debug] [2021-02-17T09:24:40.142Z] >>> [apiv2][query] GET https://api.github.com/user [none]
+[debug] [2021-02-17T09:24:40.515Z] <<< [apiv2][status] GET https://api.github.com/user 200
+[debug] [2021-02-17T09:24:40.516Z] <<< [apiv2][body] GET https://api.github.com/user {"login":"dguerrag","id":19927311,"node_id":"MDQ6VXNlcjE5OTI3MzEx","avatar_url":"https://avatars.githubusercontent.com/u/19927311?v=4","gravatar_id":"","url":"https://api.github.com/users/dguerrag","html_url":"https://github.com/dguerrag","followers_url":"https://api.github.com/users/dguerrag/followers","following_url":"https://api.github.com/users/dguerrag/following{/other_user}","gists_url":"https://api.github.com/users/dguerrag/gists{/gist_id}","starred_url":"https://api.github.com/users/dguerrag/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/dguerrag/subscriptions","organizations_url":"https://api.github.com/users/dguerrag/orgs","repos_url":"https://api.github.com/users/dguerrag/repos","events_url":"https://api.github.com/users/dguerrag/events{/privacy}","received_events_url":"https://api.github.com/users/dguerrag/received_events","type":"User","site_admin":false,"name":"Daniel Guerra","company":"Haufe","blog":"","location":"Barcelona","email":"daniel.guerra.guerrero@gmail.com","hireable":null,"bio":"Senior Front End developer at Haufe-umantis.\r\n","twitter_username":null,"public_repos":3,"public_gists":0,"followers":4,"following":0,"created_at":"2016-06-14T09:57:12Z","updated_at":"2021-02-17T09:24:29Z","private_gists":0,"total_private_repos":3,"owned_private_repos":3,"disk_usage":67323,"collaborators":4,"two_factor_authentication":true,"plan":{"name":"pro","space":976562499,"collaborators":0,"private_repos":9999}}
+[info] 
+[info] ✔  Success! Logged into GitHub as dguerrag 
+[info] 
